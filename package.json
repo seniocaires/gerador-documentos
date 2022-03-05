@@ -1,0 +1,30 @@
+{
+  "name": "gerador-documentos",
+  "version": "1.0.0",
+  "description": "API para gerar documentos aleatórios",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seniocaires/gerador-documentos.git"
+  },
+  "keywords": [
+    "gerador",
+    "cpf",
+    "api"
+  ],
+  "author": "Senio Caires",
+  "bugs": {
+    "url": "https://github.com/seniocaires/gerador-documentos/issues"
+  },
+  "homepage": "https://github.com/seniocaires/gerador-documentos#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

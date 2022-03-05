@@ -1,6 +1,7 @@
 const express = require('express')
 const geradorCpf = require("./gerador/gerador-cpf");
 const geradorCnpj = require("./gerador/gerador-cnpj");
+const geradorEmail = require("./gerador/gerador-email");
 
 
 const app = express()
@@ -12,6 +13,8 @@ app.get('/', (req, res) => {
         return res.send(geradorCpf.gerar(req.query))
     } else if (req.query.tipo == "cnpj") {
         return res.send(geradorCnpj.gerar(req.query))
+    } else if (req.query.tipo == "email") {
+        return res.send(geradorEmail.gerar(req.query))
     }
 
     res.status(400).send('Parâmetros inválidos. Informe o tipo de documento.')

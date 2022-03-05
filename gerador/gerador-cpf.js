@@ -7,7 +7,7 @@ const mod = (dividendo, divisor) => {
     return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
 }
 
-const cpf = (parametros) => {
+const gerar = (parametros) => {
 
     let cpfs = [];
 
@@ -39,7 +39,6 @@ const cpf = (parametros) => {
         };
 
         if (comPontos) {
-
             cpf = '' + n1 + n2 + n3 + '.' + n4 + n5 + n6 + '.' + n7 + n8 + n9 + '-' + d1 + d2;
         } else {
             cpf = '' + n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + d1 + d2;
@@ -57,5 +56,5 @@ const cpf = (parametros) => {
 }
 
 module.exports = {
-    cpf
+    gerar
 }
